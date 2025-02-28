@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Google AI Studio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1 {
+            color: #34A853; /* Cor do título principal (verde) */
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #4285F4; /* Cor dos títulos de seção (azul) */
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #4285F4;
+            padding-bottom: 5px;
+        }
+
+      h3 {
+        color: #00796B;
+      }
+
+        ul {
+            list-style-type: none; /* Remove os marcadores padrão da lista */
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 15px;
+            padding-left: 20px;
+            position: relative;
+            /* Permite posicionar o marcador personalizado */
+        }
+
+        /* Marcador personalizado (círculo colorido) */
+        li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 7px;
+            /* Ajuste para alinhar verticalmente */
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            /* Círculo */
+        }
+
+      /* Cores dos marcadores (correspondendo ao mapa mental) */
+        li[data-section="introducao"]::before {
+            background-color: #D32F2F;
+        }
+
+        li[data-section="o_que_e"]::before {
+            background-color: #AFB42B;
+        }
+
+        li[data-section="modelos"]::before {
+            background-color: #1976D2;
+        }
+
+        li[data-section="interface"]::before {
+            background-color: #5D4037;
+        }
+
+        li[data-section="primeiros_passos"]::before {
+            background-color: #00796B;
+        }
+
+      li[data-section="prompt"]::before {
+            background-color: #303F9F;
+        }
+
+        li[data-section="exemplos_praticos"]::before {
+            background-color: #FFA000;
+        }
+
+        li[data-section="limitacoes"]::before {
+            background-color: #6A1B9A;
+        }
+
+        a {
+            color: #4285F4; /* Cor dos links (azul) */
+            text-decoration: none; /* Remove sublinhado */
+            transition: color 0.3s ease; /* Transição suave na cor */
+        }
+
+        a:hover {
+            color: #1976D2; /* Cor do link ao passar o mouse (azul mais escuro) */
+            text-decoration: underline; /* Sublinhado ao passar o mouse */
+        }
+
+        .section-container{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+
+        }
+        .section-content {
+          margin-left: 30px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Usando Google AI Studio</h1>
+
+    <div class="section-container">
+    <h2 >Introdução</h2>
+    <div class="section-content">
+    <ul >
+        <li data-section="introducao"><a href="apresentacao.html">Apresentação da ferramenta</a></li>
+        <li data-section="introducao"><a href="requisitos.html">Requisitos</a></li>
+    </ul>
+    </div>
+    </div>
+
+  <div class="section-container">
+    <h2>O que é o Google AI Studio?</h2>
+    <div class="section-content">
+    <ul>
+        <li data-section="o_que_e"><a href="definicao.html">Definição: Ambiente de desenvolvimento baseado na web</a></li>
+        <li data-section="o_que_e"><a href="desenvolvimento_prompts.html">Desenvolvimento rápido de prompts</a></li>
+        <li data-section="o_que_e"><a href="baseado_gemini.html">Baseado nos modelos Gemini</a></li>
+        <li data-section="o_que_e"><a href="gratuito.html">Gratuito (com limites de uso)</a></li>
+        <li data-section="o_que_e"><a href="sem_instalacao.html">Não requer instalação (browser)</a></li>
+    </ul>
+    </div>
+</div>
+
+<div class="section-container">
+    <h2>Modelos de Linguagem (Gemini)</h2>
+    <div class="section-content">
+    <ul>
+        <li data-section="modelos"><a href="modelos_gemini.html">Modelos Gemini (Pro, 1.5 Pro)</a></li>
+        <li data-section="modelos"><a href="capacidades.html">Capacidades (geração de texto, imagens, código)</a></li>
+        <li data-section="modelos"><a href="ajuste_modelos.html">Ajuste de modelos (tuning - poucos exemplos)</a></li>
+        <li data-section="modelos"><a href="escolha_modelo.html">Escolha do modelo ideal para a tarefa</a></li>
+    </ul>
+    </div>
+</div>
+
+<div class="section-container">
+    <h2>Interface e Recursos</h2>
+    <div class="section-content">
+    <ul>
+        <li data-section="interface"><a href="visao_geral.html">Visão geral da interface</a></li>
+        <li data-section="interface"><a href="modos_prompt.html">Modos de Prompt (Freeform, Structured, Chat)</a></li>
+        <li data-section="interface"><a href="parametros.html">Parâmetros (temperatura, top_k, top_p)</a></li>
+        <li data-section="interface"><a href="exemplos_prompts_interface.html">Exemplos de prompts (inputs)</a></li>
+        <li data-section="interface"><a href="visualizacao_resultados.html">Visualização de resultados</a></li>
+        <li data-section="interface"><a href="historico_prompts.html">Histórico de prompts</a></li>
+        <li data-section="interface"><a href="geracao_codigo.html">Geração de código</a></li>
+    </ul>
+</div>
+</div>
+<div class="section-container">
+    <h2>Primeiros Passos</h2>
+    <div class="section-content">
+    <ul>
+        <li data-section="primeiros_passos"><a href="acesso.html">Acesso ao Google AI Studio (site)</a></li>
+        <li data-section="primeiros_passos"><a href="login.html">Login com conta Google</a></li>
+      <li data-section="primeiros_passos"><a href="pasta_drive.html">Pasta no Google Drive</a></li>
+        <li data-section="primeiros_passos"><a href="criacao_prompt.html">Criação do primeiro prompt</a></li>
+        <li data-section="primeiros_passos"><a href="exploracao.html">Exploração da interface</a></li>
+        <li data-section="primeiros_passos"><a href="chave_api.html">Obtenção da chave de API (se necessário)</a></li>
+    </ul>
+    </div>
+</div>
+
+<div class="section-container">
+      <h2>Prompt</h2>
+    <div class="section-content">
+    <ul>
+        <li data-section="prompt"><a href="o_que_e_prompt.html">O que é prompt engineering?</a></li>
+        <li data-section="prompt"><a href="clareza_prompt.html">Importância da clareza e especificidade</a></li>
+        <li data-section="prompt"><a href="tecnicas_prompt.html">Técnicas de prompting (chain-of-thought, few-shot)</a></li>
+        <li data-section="prompt"><a href="exemplos_prompt.html">Uso de exemplos (inputs e outputs)</a></li>
+        <li data-section="prompt"><a href="refinamento_prompt.html">Iteração e refinamento de prompts</a></li>
+        <li data-section="prompt"><a href="evitar_respostas.html">Como evitar respostas indesejadas/vieses</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="section-container">
+    <h2>Exemplos Práticos</h2>
+    <div class="section-content">
+    <ul>
+        <li data-section="exemplos_praticos"><a href="texto_criativo.html">Geração de texto criativo (poemas, roteiros)</a></li>
+        <li data-section="exemplos_praticos"><a href="resumo_textos.html">Resumo de textos</a></li>
+        <li data-section="exemplos_praticos"><a href="chatbots.html">Criação de chatbots simples</a></li>
+        <li data-section="exemplos_praticos"><a href="geracao_codigo_exemplo.html">Geração de código (ex: funções Python)</a></li>
+        <li data-section="exemplos_praticos"><a href="analise_sentimento.html">Análise de sentimento (texto)</a></li>
+        <li data-section="exemplos_praticos"><a href="geracao_imagens_exemplo.html">Geração de Imagens</a></li>
+        <li data-section="exemplos_praticos"><a href="extracao_informacoes.html">Extração de informações de texto</a></li>
+
+    </ul>
+    </div>
+</div>
+
+<div class="section-container">
+    <h2>Limitações e Considerações</h2>
+    <div class="section-content">
+    <ul>
+        <li data-section="limitacoes"><a href="limitacoes_modelo.html">Limitações do modelo (conhecimento, vieses, alucinações)</a></li>
+        <li data-section="limitacoes"><a href="custos.html">Custos (gratuito vs. pago - Google Cloud)</a></li>
+        <li data-section="limitacoes"><a href="cotas.html">Cotas e limites de uso (requisições/minuto)</a></li>
+        <li data-section="limitacoes"><a href="privacidade.html">Privacidade e segurança dos dados</a></li>
+        <li data-section="limitacoes"><a href="etica.html">Considerações éticas</a></li>
+    </ul>
+    </div>
+</div>
+
+</body>
+</html>
